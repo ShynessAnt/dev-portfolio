@@ -6,7 +6,7 @@ export const projects: Project[] = [
     slug: 'campus-connect',
     title: 'Campus Connect',
     summary:
-      'Sitio para consultar avisos, horarios y recursos de un campus universitario de ejemplo.',
+      'Sitio para consultar avisos, horarios y recursos de un campus universitario.',
     problem:
       'La información académica estaba dispersa en carteles y archivos sueltos. Esta aplicación agrupa avisos y horarios en una sola vista de lectura.',
     category: 'web',
@@ -20,8 +20,6 @@ export const projects: Project[] = [
         height: 540,
       },
     ],
-    demoUrl: 'https://ejemplo.com/campus-connect',
-    repoUrl: 'https://github.com/tu-usuario/campus-connect',
     featured: true,
     year: 2026,
   },
@@ -43,8 +41,6 @@ export const projects: Project[] = [
         height: 540,
       },
     ],
-    demoUrl: 'https://ejemplo.com/study-track',
-    repoUrl: 'https://github.com/tu-usuario/study-track',
     featured: true,
     year: 2025,
   },
@@ -57,7 +53,7 @@ export const projects: Project[] = [
       'Los diagramas estáticos no ayudaban a ver el orden de los hops. La simulación anima un camino de ejemplo, sin servidor.',
     category: 'academico',
     technologies: ['TypeScript', 'SVG', 'Vite'],
-    role: 'Modelado del ejemplo y visualización',
+    role: 'Modelado y visualización de una red pequeña',
     images: [
       {
         src: withBase('images/projects/simulador-redes.svg'),
@@ -66,7 +62,6 @@ export const projects: Project[] = [
         height: 540,
       },
     ],
-    repoUrl: 'https://github.com/tu-usuario/simulador-redes',
     featured: true,
     year: 2025,
   },
@@ -88,7 +83,6 @@ export const projects: Project[] = [
         height: 540,
       },
     ],
-    demoUrl: 'https://ejemplo.com/guia-css',
     featured: false,
     year: 2024,
   },

@@ -1,36 +1,95 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 1rem;
+  gap: 0.75rem;
+  padding: 1.5rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
   height: 100%;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='dark'] .card:hover {
+  border-color: rgba(165, 148, 249, 0.35);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(165, 148, 249, 0.05);
 }
 
 .meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
   color: var(--muted);
-  font-size: 0.85rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(165, 148, 249, 0.1);
+  border: 1px solid rgba(165, 148, 249, 0.2);
+  border-radius: 9999px;
+}
+
+.date {
+  color: var(--muted);
+}
+
+.readingTime {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--muted);
 }
 
 .title {
-  font-size: 1.1rem;
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 
 .title a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   color: var(--text);
   text-decoration: none;
+  transition: color var(--transition);
 }
 
-.title a:hover {
+.arrowIcon {
+  color: var(--muted);
+  transition: transform var(--transition), color var(--transition);
+  flex-shrink: 0;
+}
+
+.card:hover .arrowIcon {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+.card:hover .title a {
   color: var(--accent);
 }
 
 .excerpt {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
 }

@@ -1,27 +1,31 @@
 :root {
-  --bg: #fafafa;
-  --text: #111111;
-  --muted: #6b7280;
+  --bg: #f9fafb;
+  --text: #111216;
+  --muted: #646a78;
   --border: #e5e7eb;
-  --accent: #1f7a8c;
-  --accent-hover: #186273;
+  --border-hover: #d1d5db;
+  --accent: #7c66dc;
+  --accent-hover: #6a53cb;
   --on-accent: #ffffff;
   --surface: #ffffff;
-  --radius: 8px;
+  --surface-hover: #f3f4f6;
+  --radius: 1rem;
   --max-text: 45rem;
-  --max-grid: 67.5rem;
-  --font: system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --transition: 180ms ease;
+  --max-grid: 68rem;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --transition: 200ms cubic-bezier(0.16, 1, 0.3, 1);
   --focus: var(--accent);
 }
 
 [data-theme='dark'] {
-  --bg: #121212;
-  --text: #f4f4f5;
-  --muted: #9ca3af;
-  --border: #2d2d2d;
-  --accent: #3aa4b5;
-  --accent-hover: #5bb9c7;
-  --on-accent: #111111;
-  --surface: #1a1a1a;
+  --bg: #090a0e;
+  --text: #f4f4f6;
+  --muted: #8e939e;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.18);
+  --accent: #a594f9;
+  --accent-hover: #bcaefc;
+  --on-accent: #090a0e;
+  --surface: #111216;
+  --surface-hover: #16181f;
 }

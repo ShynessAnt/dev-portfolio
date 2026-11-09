@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { PageMeta } from '@/components/PageMeta';
 import { PostCard } from '@/components/PostCard';
 import { ProjectCard } from '@/components/ProjectCard';
+import { TechText } from '@/components/TechText';
 import { profile } from '@/data/profile';
 import { getFeaturedProjects } from '@/data/projects';
 import { getLatestPosts } from '@/lib/posts';
@@ -27,7 +28,9 @@ export default function Home() {
         />
         <div>
           <p className={styles.role}>{profile.role}</p>
-          <h1 id="presentacion">{profile.name}</h1>
+          <h1 id="presentacion" className={styles.title} aria-label={profile.name}>
+            <TechText text={profile.name} />
+          </h1>
           <p className={styles.lead}>{profile.tagline}</p>
         </div>
         <div className={styles.actions}>
